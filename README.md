@@ -1,3 +1,3 @@
 # JoshZaporteza.github.io
 
-![Screenshot of an ado picture](/assets/images/electrocat.png)
+gem "github-pages", group: :jekyll_plugins
