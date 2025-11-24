@@ -1,19 +1,82 @@
-<!-- NAV BAR -->
-<div style="text-align:center; font-size:20px; margin-bottom:30px;">
-  <a href="/index.html" style="margin: 0 20px;">Home</a>
-  <a href="/vr.html" style="margin: 0 20px;">Virtual Reality</a>
-  <a href="/3d.html" style="margin: 0 20px;">3D Games</a>
-  <a href="/2d.html" style="margin: 0 20px;">2D Games</a>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <style>
+    /* Set the background to black and text to white */
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
+    /* Center the content and create side lines */
+    .content-wrapper {
+      max-width: 900px;   /* width of your content area */
+      margin: 0 auto;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      padding: 20px;
+    }
 
+    /* Nav bar styling */
+    .nav-bar {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
 
+    .nav-bar a {
+      margin: 0 20px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
 
-<div align="center">
+    .nav-bar a:hover {
+      text-decoration: underline;
+    }
 
-# About Me
+    /* Center headings */
+    h1, h2, h3 {
+      text-align: center;
+    }
 
-</div>
+    /* Image styling */
+    .image-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
 
-Hi, I’m **[Your Name]**.  
-This portfolio showcases my VR, 3D, and 2D game development.
+    .image-grid img {
+      width: 48%;
+      border: 2px solid #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAV BAR -->
+  <div class="nav-bar">
+    <a href="/index.html">Home</a>
+    <a href="/vr.html">Virtual Reality</a>
+    <a href="/3d.html">3D Games</a>
+    <a href="/2d.html">2D Games</a>
+  </div>
+
+  <div class="content-wrapper">
+
+    <h1>About Me</h1>
+    <p>Hi, I’m <strong>[Your Name]</strong>.<br>
+    This portfolio showcases my VR, 3D, and 2D game development.</p>
+
+  </div>
+
+</body>
+</html>
