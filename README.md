@@ -1,6 +1,11 @@
 # JoshZaporteza.github.io
 
+<div align="center">
+
 # About Me
+
+</div>
+
 Hi, I’m **[Your Name]**.  
 This portfolio showcases my VR games, level designs, and development work.
 
@@ -17,7 +22,11 @@ This portfolio showcases my VR games, level designs, and development work.
   <img src="path/to/image4.jpg" width="48%">
 </div>
 
+<div align="center">
+
 # **Levels**
+
+</div>
 
 ## Dream Punk
 
