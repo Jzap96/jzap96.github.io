@@ -1,4 +1,3 @@
-JoshZaporteza.github.io
 
 
 <!-- NAV BAR -->
