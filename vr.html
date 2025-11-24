@@ -17,7 +17,6 @@
     .nav-bar {
       text-align: center;
       font-size: 20px;
-      margin-bottom: 30px;
       padding: 40px 0;
       background-color: #000;
       position: sticky;
@@ -36,18 +35,20 @@
       text-decoration: underline;
     }
 
-    /* Full height wrapper with white side borders */
+    /* Content wrapper with side lines and centered text */
     .content-wrapper {
-      border-left: 3px solid #fff;
-      border-right: 3px solid #fff;
-      padding: 20px;
-      text-align: center;
       max-width: 900px;
       margin: 0 auto;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      padding: 20px 0 40px 0;
+      text-align: center;
+      min-height: 100vh; /* ensures white bars extend full height */
+      box-sizing: border-box;
     }
 
-    /* Image and video grid */
-    .image-grid {
+    /* Image and video grids */
+    .media-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -55,11 +56,10 @@
       margin-top: 10px;
     }
 
-    .image-grid img,
-    .image-grid video {
-      width: 100%; /* Fill width between white bars */
-      max-width: 900px; /* Do not exceed content wrapper */
-      height: auto; /* Maintain aspect ratio */
+    .media-grid img,
+    .media-grid video {
+      width: 48%;
+      height: auto;
       border: 2px solid #fff;
     }
 
@@ -80,21 +80,25 @@
     <a href="/2d.html">2D Games</a>
   </div>
 
-  <!-- CONTENT -->
   <div class="content-wrapper">
 
     <h1>Virtual Reality</h1>
 
     <!-- Harbored Game -->
     <h2>Harbored</h2>
-    <div class="image-grid">
+    <div class="media-grid">
       <img src="images/vr_ship1.png" alt="Ship Image">
       <img src="images/vr_ship2.png" alt="Harbor Ship">
       <img src="images/vr_ship3.png" alt="Image 3">
-
-      <video controls>
-        <source src="videos/PirateVideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
+      
+      <!-- Accessible video -->
+      <video controls 
+             src="videos/PirateVideo.mp4" 
+             aria-label="Pirate ship sailing on the sea" 
+             aria-details="pirate-video-transcript">
+        Your browser does not support the video tag. 
+        <a href="videos/PirateVideo.mp4">Download the video</a> or 
+        <a id="pirate-video-transcript" href="transcripts/PirateVideo.txt">read the transcript</a>.
       </video>
     </div>
 
