@@ -69,14 +69,19 @@
       margin-bottom: 20px;
     }
 
-    .projects-header {
-      font-size: 32px;
+    /* Full-width Personal Projects Header */
+    .projects-header-full {
+      width: 100%;
+      background-color: #222; /* Grey background */
+      padding: 20px 0;
       margin-top: 60px;
       margin-bottom: 40px;
+    }
+
+    .projects-header-full h2 {
       color: #6a0dad; /* Dark purple text */
-      background-color: #222; /* Grey background for Personal Projects */
-      padding: 20px;
-      border-radius: 8px;
+      font-size: 32px;
+      margin: 0;
     }
 
     /* Paragraph Spacing */
@@ -125,10 +130,8 @@
         margin-bottom: 30px;
       }
 
-      .projects-header {
+      .projects-header-full h2 {
         font-size: 28px;
-        margin-top: 40px;
-        margin-bottom: 30px;
       }
     }
   </style>
@@ -158,16 +161,19 @@
 
     <!-- Second Paragraph -->
     <p class="second-text">I like to focus on set dressing and white boxing. I have also led teams and helped out other leads with distributing tasks within groups.</p>
+  </div>
 
-    <!-- Personal Projects Header -->
-    <div class="projects-header">Personal Projects</div>
+  <!-- Personal Projects Header (Full Width) -->
+  <div class="projects-header-full">
+    <h2>Personal Projects</h2>
+  </div>
 
-    <!-- Images Side by Side -->
+  <!-- Images Side by Side -->
+  <div class="content-wrapper">
     <div class="image-row">
       <img src="images/DreamPunk.png" alt="Dream Punk Screenshot">
-     <img src="images/country.png" alt="Country Screenshot">
+      <img src="images/country.png" alt="Country Screenshot">
     </div>
-
   </div>
 
 </body>
