@@ -6,22 +6,23 @@
   <style>
     /* Page background and text */
     body {
-      background-color: #000;
+      background-color: #007BFF; /* blue frame background */
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
 
-    /* Content wrapper with side lines */
+    /* Content wrapper with white lines inset from edges */
     .content-wrapper {
-      width: 95%; /* closer to screen edges */
+      width: 90%; /* inset from sides */
       max-width: 1200px;
       margin: 0 auto;
       border-left: 3px solid #fff;
       border-right: 3px solid #fff;
       padding: 20px;
       text-align: center;
+      background-color: #000; /* black background inside white lines */
     }
 
     /* Nav bar styling */
@@ -57,20 +58,20 @@
     }
 
     .image-grid img {
-      height: auto; /* keep natural height */
+      height: auto;
       width: auto;
       max-width: 48%;
       border: 2px solid #fff;
     }
 
     .image-grid img.center {
-      margin: 0 auto; /* center the third image */
+      margin: 0 auto;
     }
 
     /* Video styling */
     .full-video {
       width: 100%; /* full width of content wrapper */
-      height: auto; /* maintain aspect ratio */
+      height: auto;
       border: 2px solid #fff;
       margin-top: 20px;
     }
