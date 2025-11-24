@@ -5,7 +5,7 @@
   <title>Virtual Reality</title>
   <style>
     body {
-      background-color: #000;
+      background-color: #000; /* Black background */
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,17 +15,17 @@
 
     /* Top Header */
     .header-top {
-      background-color: #1a1a1a;
+      background-color: #1a1a1a; /* Dark grey / black */
       padding: 40px 0 10px 0;
     }
 
     .header-top h1 {
-      font-size: 48px;
+      font-size: 48px; /* Large name */
       margin: 0;
     }
 
     .header-top h2 {
-      font-size: 24px;
+      font-size: 24px; /* Smaller title */
       margin: 0;
       font-weight: normal;
       color: #ccc;
@@ -35,8 +35,8 @@
     .nav-bar {
       text-align: center;
       font-size: 20px;
-      padding: 20px 0;
-      background-color: #666666;
+      padding: 40px 0;
+      background-color: #666666; /* Grey nav bar */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -58,7 +58,8 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
-      background-color: #000;
+      text-align: center;
+      background-color: #000; /* Black content area */
     }
 
     .image-grid {
@@ -71,7 +72,6 @@
 
     .image-grid img {
       height: auto;
-      width: auto;
       max-width: 48%;
       border: 2px solid #fff;
     }
@@ -80,23 +80,28 @@
       margin: 0 auto;
     }
 
-    /* Big YouTube Video */
     .video-container {
-      width: 90%;           /* almost full width of content wrapper */
-      max-width: 1200px;    /* limit on very large screens */
-      margin: 30px auto;    /* center and spacing */
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
+      margin-top: 20px;
     }
 
-    .video-container iframe {
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 675px;        /* large height, maintains 16:9 ratio for 1200px width */
+      height: 100%;
       border: 2px solid #fff;
+      object-fit: contain; /* keeps proper aspect ratio */
     }
 
     h1, h2 {
+      text-align: center;
       margin-bottom: 20px;
     }
-
   </style>
 </head>
 <body>
@@ -118,8 +123,8 @@
   <!-- CONTENT -->
   <div class="content-wrapper">
     <h1>Virtual Reality</h1>
-    <h2>Harbored</h2>
 
+    <h2>Harbored</h2>
     <div class="image-grid">
       <img src="images/vr_ship1.png" alt="Ship Image">
       <img src="images/vr_ship2.png" alt="Harbor Ship">
@@ -127,14 +132,17 @@
     </div>
 
     <div class="video-container">
-      <iframe src="https://www.youtube.com/embed/sDaqmaKhPzk" 
-              title="Pirate ship sailing video" 
-              frameborder="0" 
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-              allowfullscreen>
-      </iframe>
+      <video controls 
+             aria-label="Pirate ship sailing video"
+             aria-details="pirate-video-transcript">
+        <source src="videos/PirateVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </div>
 
+    <p id="pirate-video-transcript">
+      <a href="videos/PirateVideoTranscript.txt" style="color: #fff;">View transcript of the video</a>
+    </p>
   </div>
 
 </body>
