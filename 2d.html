@@ -2,51 +2,46 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures responsive design -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2D Games</title>
   <style>
-    /* Universal Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    /* Body Styles */
     body {
-      background-color: #000; /* Black background */
+      background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
-      text-align: center; /* Center all text by default */
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
     /* Top Header */
     .header-top {
-      background-color: #0b1e5b; /* Dark Blue header */
+      background-color: #0b1e5b; /* Dark Blue header same as About Me */
       padding: 40px 0 10px 0;
-      width: 100%;  /* Ensures header spans full width */
+      width: 100%;
     }
 
     .header-top h1 {
-      font-size: 48px; /* Large name */
+      font-size: 48px;
       margin: 0;
     }
 
     .header-top h2 {
-      font-size: 24px; /* Smaller title */
+      font-size: 24px;
       margin: 0;
       font-weight: normal;
       color: #ccc;
     }
 
-    /* Nav Bar */
+    /* NAV BAR */
     .nav-bar {
-      background-color: #0b1e5b; /* Same dark blue as header */
-      padding: 20px 0;
+      background-color: #0b1e5b; /* Dark blue same as header */
+      text-align: center;
+      font-size: 20px;
+      padding: 40px 0;
       position: sticky;
       top: 0;
       z-index: 1000;
-      text-align: center; /* Ensure nav links are centered */
     }
 
     .nav-bar a {
@@ -62,47 +57,63 @@
 
     /* Content Area */
     .content-wrapper {
-      max-width: 1200px; /* Limit content width */
-      margin: 0 auto;  /* Center content */
+      max-width: 1200px;
+      margin: 0 auto;
       padding: 20px;
-      background-color: #000; /* Black content area */
+      text-align: center;
+      background-color: #000;
     }
 
-    h1, h2 {
+    h1.page-title {
+      color: #888;
       margin-bottom: 20px;
     }
 
-    .image-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-      margin-top: 20px; /* Added margin for spacing */
+    .projects-header {
+      font-size: 32px;
+      margin-top: 60px;
+      margin-bottom: 40px;
+      color: #6a0dad;
+      background-color: #222;
+      padding: 20px;
+      border-radius: 0;
+      width: 100%;
     }
 
-    .image-grid img {
+    .image-row {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 50px;
+    }
+
+    .image-container {
+      max-width: 45%;
+      text-align: center;
+    }
+
+    .image-container img {
+      width: 100%;
       height: auto;
-      max-width: 48%;
       border: 2px solid #fff;
     }
 
-    /* Responsive Design: Adjustments for small screens */
+    .image-caption {
+      margin-top: 15px;
+      font-size: 16px;
+      color: #ccc;
+      line-height: 1.4;
+    }
+
+    /* Responsive */
     @media (max-width: 768px) {
-      .header-top h1 {
-        font-size: 36px; /* Smaller header on smaller screens */
-      }
-
-      .header-top h2 {
-        font-size: 20px; /* Adjust subtitle size for smaller screens */
-      }
-
-      .nav-bar a {
-        font-size: 18px; /* Slightly smaller nav links */
-      }
-
-      .image-grid img {
-        max-width: 100%; /* Images should take up full width on mobile */
-      }
+      .header-top h1 { font-size: 36px; }
+      .header-top h2 { font-size: 20px; }
+      .nav-bar a { font-size: 18px; }
+      .image-row { flex-direction: column; gap: 30px; }
+      .image-container { max-width: 90%; }
+      .projects-header { font-size: 28px; margin-top: 40px; margin-bottom: 30px; }
     }
   </style>
 </head>
@@ -124,14 +135,19 @@
 
   <!-- CONTENT -->
   <div class="content-wrapper">
-    <h1>2D Games</h1>
+    <h1 class="page-title">2D Games</h1>
 
-    <h2>Harbored</h2>
-    <div class="image-grid">
-      <img src="path/to/image1.jpg" alt="Image 1">
-      <img src="path/to/image2.jpg" alt="Image 2">
-      <img src="path/to/image3.jpg" alt="Image 3">
-      <img src="path/to/image4.jpg" alt="Image 4">
+    <div class="projects-header">Personal Projects</div>
+
+    <div class="image-row">
+      <div class="image-container">
+        <img src="images/2d_game1.png" alt="2D Game 1">
+        <div class="image-caption">For this game you are a spy navigating through a forest avoiding enemies and solving puzzles.</div>
+      </div>
+      <div class="image-container">
+        <img src="images/2d_game2.png" alt="2D Game 2">
+        <div class="image-caption">In this village game, you live as a normal boy in a hidden forest village surrounded by mountains.</div>
+      </div>
     </div>
   </div>
 
