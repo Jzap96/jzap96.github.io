@@ -5,7 +5,7 @@
   <title>Virtual Reality</title>
   <style>
     body {
-      background-color: #000; /* Black background */
+      background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
@@ -15,17 +15,17 @@
 
     /* Top Header */
     .header-top {
-      background-color: #1a1a1a; /* Dark grey / black */
+      background-color: #1a1a1a;
       padding: 40px 0 10px 0;
     }
 
     .header-top h1 {
-      font-size: 48px; /* Large name */
+      font-size: 48px;
       margin: 0;
     }
 
     .header-top h2 {
-      font-size: 24px; /* Smaller title */
+      font-size: 24px;
       margin: 0;
       font-weight: normal;
       color: #ccc;
@@ -35,8 +35,8 @@
     .nav-bar {
       text-align: center;
       font-size: 20px;
-      padding: 40px 0;
-      background-color: #666666; /* Grey nav bar */
+      padding: 20px 0;
+      background-color: #666666;
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -58,8 +58,7 @@
       max-width: 1200px;
       margin: 0 auto;
       padding: 20px;
-      text-align: center;
-      background-color: #000; /* Black content area */
+      background-color: #000;
     }
 
     .image-grid {
@@ -71,8 +70,8 @@
     }
 
     .image-grid img {
+      max-width: 30%;
       height: auto;
-      max-width: 48%;
       border: 2px solid #fff;
     }
 
@@ -80,26 +79,20 @@
       margin: 0 auto;
     }
 
+    /* Video */
     .video-container {
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      padding-top: 56.25%; /* 16:9 aspect ratio */
-      margin-top: 20px;
+      width: 90%;
+      max-width: 1000px;
+      margin: 30px auto;
     }
 
     .video-container video {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%;
-      height: 100%;
+      height: auto;
       border: 2px solid #fff;
-      object-fit: contain; /* maintain aspect ratio */
     }
 
     h1, h2 {
-      text-align: center;
       margin-bottom: 20px;
     }
 
@@ -124,8 +117,8 @@
   <!-- CONTENT -->
   <div class="content-wrapper">
     <h1>Virtual Reality</h1>
-
     <h2>Harbored</h2>
+
     <div class="image-grid">
       <img src="images/vr_ship1.png" alt="Ship Image">
       <img src="images/vr_ship2.png" alt="Harbor Ship">
@@ -136,7 +129,7 @@
       <video controls
              aria-label="Pirate ship sailing video"
              aria-details="pirate-video-transcript">
-        <source src="https://raw.githubusercontent.com/Jzap96/jzap96.github.io/refs/heads/main/Video/PirateVideo.mp4" type="video/mp4">
+        <source src="videos/PirateVideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
@@ -144,6 +137,7 @@
     <p id="pirate-video-transcript">
       <a href="videos/PirateVideoTranscript.txt" style="color: #fff;">View transcript of the video</a>
     </p>
+
   </div>
 
 </body>
