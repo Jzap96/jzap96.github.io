@@ -2,31 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Home</title>
+  <title>About Me</title>
   <style>
     body {
-      background-color: #000;
+      background-color: #000; /* Black background */
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-    }
-
-    .content-wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-      border-left: 3px solid #fff;
-      border-right: 3px solid #fff;
-      padding: 20px;
       text-align: center;
     }
 
+    /* Top Header */
+    .header-top {
+      background-color: #1a1a1a; /* Dark grey / black */
+      padding: 40px 0 10px 0;
+    }
+
+    .header-top h1 {
+      font-size: 48px; /* Large name */
+      margin: 0;
+    }
+
+    .header-top h2 {
+      font-size: 24px; /* Smaller title */
+      margin: 0;
+      font-weight: normal;
+      color: #ccc;
+    }
+
+    /* Nav Bar */
     .nav-bar {
       text-align: center;
       font-size: 20px;
-      margin-bottom: 30px;
-      padding: 40px 0; /* Increased vertical padding */
-      background-color: #000;
+      padding: 40px 0;
+      background-color: #666666; /* Grey nav bar */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -43,13 +53,30 @@
       text-decoration: underline;
     }
 
-    h1, h2, h3, p {
+    /* Content Area */
+    .content-wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
       text-align: center;
+      background-color: #000; /* Black content area */
+    }
+
+    h1, h2, p {
+      text-align: center;
+      margin-bottom: 20px;
     }
   </style>
 </head>
 <body>
 
+  <!-- Top Header -->
+  <div class="header-top">
+    <h1>Josh Zaporteza</h1>
+    <h2>Level Designer</h2>
+  </div>
+
+  <!-- NAV BAR -->
   <div class="nav-bar">
     <a href="/index.html">Home</a>
     <a href="/vr.html">Virtual Reality</a>
@@ -57,9 +84,10 @@
     <a href="/2d.html">2D Games</a>
   </div>
 
+  <!-- CONTENT -->
   <div class="content-wrapper">
     <h1>About Me</h1>
-    <p>Hi, I’m <strong>[Your Name]</strong>.<br>
+    <p>Hi, I’m <strong>Josh Zaporteza</strong>.<br>
     This portfolio showcases my VR, 3D, and 2D game development.</p>
   </div>
 
