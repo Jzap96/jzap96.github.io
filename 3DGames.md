@@ -21,5 +21,3 @@
   <img src="path/to/image3.jpg" width="48%">
   <img src="path/to/image4.jpg" width="48%">
 </div>
-
-(Add 3D game titles + images here)
