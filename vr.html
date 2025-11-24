@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <title>Virtual Reality</title>
   <style>
+    /* Page background and text */
     body {
       background-color: #000;
       color: #fff;
@@ -12,6 +13,7 @@
       padding: 0;
     }
 
+    /* Content wrapper with side lines and centered text */
     .content-wrapper {
       max-width: 900px;
       margin: 0 auto;
@@ -21,6 +23,7 @@
       text-align: center;
     }
 
+    /* Nav bar styling */
     .nav-bar {
       text-align: center;
       font-size: 20px;
@@ -43,7 +46,7 @@
       text-decoration: underline;
     }
 
-    /* Image grid for images only */
+    /* Image grids */
     .image-grid {
       display: flex;
       flex-wrap: wrap;
@@ -52,21 +55,14 @@
       margin-top: 10px;
     }
 
-    .image-grid img {
+    .image-grid img, .image-grid video {
       width: 48%;
+      max-width: 640px;
+      height: auto;
       border: 2px solid #fff;
     }
 
-    /* Video full width */
-    .video-wrapper {
-      margin-top: 20px;
-    }
-
-    .video-wrapper video {
-      width: 100%;
-      border: 2px solid #fff;
-    }
-
+    /* Headings */
     h1, h2 {
       text-align: center;
       margin-bottom: 20px;
@@ -75,6 +71,7 @@
 </head>
 <body>
 
+  <!-- NAV BAR -->
   <div class="nav-bar">
     <a href="/index.html">Home</a>
     <a href="/vr.html">Virtual Reality</a>
@@ -83,18 +80,18 @@
   </div>
 
   <div class="content-wrapper">
+
     <h1>Virtual Reality</h1>
 
+    <!-- Harbored Game -->
     <h2>Harbored</h2>
     <div class="image-grid">
       <img src="images/vr_ship1.png" alt="Ship Image">
       <img src="images/vr_ship2.png" alt="Harbor Ship">
       <img src="images/vr_ship3.png" alt="Image 3">
-    </div>
 
-    <div class="video-wrapper">
       <video controls>
-        <source src="video/PirateVideo.mp4" type="video/mp4">
+        <source src="videos/PirateVideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
     </div>
