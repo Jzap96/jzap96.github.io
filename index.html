@@ -4,8 +4,9 @@
   <meta charset="UTF-8">
   <title>My Portfolio</title>
   <style>
-    /* Set the background to black and text to white */
-    body {
+    /* Full page black background */
+    html, body {
+      height: 100%;
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
@@ -13,14 +14,15 @@
       padding: 0;
     }
 
-    /* Center the content and create side lines */
+    /* Center the content and create longer side lines */
     .content-wrapper {
-      max-width: 900px;   /* width of your content area */
-      margin: 0 auto;
-      border-left: 3px solid #fff;
-      border-right: 3px solid #fff;
+      max-width: 1200px;           /* wider content */
+      min-height: 100vh;           /* full viewport height */
+      margin: 20px auto;           /* closer to screen top/bottom */
+      border-left: 5px solid #fff;  /* thicker left line */
+      border-right: 5px solid #fff; /* thicker right line */
       padding: 20px;
-      text-align: center; /* centers all text inside */
+      text-align: center;           /* center all text inside */
     }
 
     /* Nav bar styling */
@@ -57,6 +59,13 @@
     .image-grid img {
       width: 48%;
       border: 2px solid #fff;
+    }
+
+    /* Responsive adjustment for smaller screens */
+    @media (max-width: 1400px) {
+      .content-wrapper {
+        max-width: 90%;
+      }
     }
 
   </style>
