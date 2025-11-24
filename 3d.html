@@ -21,11 +21,12 @@
       text-align: center;
     }
 
+    /* Nav bar styling with more padding */
     .nav-bar {
       text-align: center;
       font-size: 20px;
       margin-bottom: 30px;
-      padding: 20px 0;
+      padding: 40px 0;       /* Increased vertical padding */
       background-color: #000;
       position: sticky;
       top: 0;
@@ -43,6 +44,7 @@
       text-decoration: underline;
     }
 
+    /* Tab buttons */
     .tabs button {
       margin: 0 10px;
       padding: 8px 16px;
@@ -85,10 +87,12 @@
       font-weight: bold;
       margin-bottom: 10px;
     }
+
   </style>
 </head>
 <body>
 
+  <!-- NAV BAR -->
   <div class="nav-bar">
     <a href="/index.html">Home</a>
     <a href="/vr.html">Virtual Reality</a>
@@ -97,6 +101,7 @@
   </div>
 
   <div class="content-wrapper">
+
     <h1>3D Games</h1>
 
     <!-- Tabs -->
@@ -106,6 +111,7 @@
     </div>
 
     <div class="tab-content">
+      <!-- Patched Content -->
       <div id="patched" style="display:block;">
         <div class="tab-title">Patched</div>
         <div class="sub-title">Map</div>
@@ -113,6 +119,7 @@
           <img src="path/to/map1.jpg" alt="Map 1">
           <img src="path/to/map2.jpg" alt="Map 2">
         </div>
+
         <div class="image-grid">
           <img src="path/to/image1.jpg" alt="Image 1">
           <img src="path/to/image2.jpg" alt="Image 2">
@@ -121,6 +128,7 @@
         </div>
       </div>
 
+      <!-- Dream Punk Content -->
       <div id="dreampunk" style="display:none;">
         <div class="tab-title">Dream Punk</div>
         <div class="image-grid">
@@ -134,6 +142,7 @@
 
   </div>
 
+  <!-- Tab switching script -->
   <script>
     function showTab(tabId) {
       document.getElementById('patched').style.display = 'none';
