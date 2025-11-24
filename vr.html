@@ -10,7 +10,6 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      text-align: center;
     }
 
     /* Top Header */
@@ -67,7 +66,7 @@
       flex-wrap: wrap;
       gap: 10px;
       justify-content: center;
-      margin-top: 10px;
+      margin-top: 20px; /* Added margin for spacing */
     }
 
     .image-grid img {
@@ -85,7 +84,7 @@
       width: 100%;
       max-width: 100%;
       padding-top: 56.25%; /* 16:9 aspect ratio */
-      margin-top: 20px;
+      margin-top: 40px; /* Added space between text and video */
     }
 
     .video-container video {
@@ -99,7 +98,7 @@
     }
 
     .video-description {
-      margin-top: 15px;
+      margin-top: 20px; /* Added space between video and description */
       font-size: 18px;
       color: #fff;
       max-width: 900px;
@@ -140,16 +139,18 @@
       <img src="images/vr_ship3.png" class="center" alt="Another Ship">
     </div>
 
+    <!-- Text Description Above Video -->
+    <div class="video-description">
+      "The game called Harbored is a VR experience where you are on a sinking pirate ship with a bunch of fellow crewmates that aren't much help and you must fix the ship before sinking."
+    </div>
+
+    <!-- Video -->
     <div class="video-container">
       <video controls 
              aria-label="Pirate ship sailing video">
         <source src="videos/PirateVideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-    </div>
-
-    <div class="video-description">
-      "The game called Harbored is a VR experience where you are on a sinking pirate ship with a bunch of fellow crewmates that aren't much help and you must fix the ship before sinking"
     </div>
 
   </div>
