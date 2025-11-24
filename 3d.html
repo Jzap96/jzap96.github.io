@@ -101,12 +101,18 @@
 <body>
 
   <!-- NAV BAR -->
-  <div class="nav-bar">
-    <a href="/index.html">Home</a>
-    <a href="/vr.html">Virtual Reality</a>
-    <a href="/3d.html">3D Games</a>
-    <a href="/2d.html">2D Games</a>
-  </div>
+ /* Nav bar styling */
+.nav-bar {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 30px;  /* space below nav links */
+  padding: 20px 0;      /* extra padding top & bottom */
+  background-color: #000; /* ensures it matches the page background */
+  position: sticky;       /* optional: keeps nav at top while scrolling */
+  top: 0;
+  z-index: 1000;
+}
+
 
   <div class="content-wrapper">
 
