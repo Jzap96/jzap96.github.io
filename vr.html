@@ -27,7 +27,7 @@
       text-align: center;
       font-size: 20px;
       padding: 40px 0;
-      background-color: #007bff; /* Changed nav bar color to blue */
+      background-color: #007bff; /* Blue nav bar */
       position: sticky;
       top: 0;
       z-index: 1000;
@@ -107,10 +107,15 @@
     </div>
 
     <div class="video-wrapper">
-      <video controls>
+      <video controls
+             aria-label="Pirate ship sailing in virtual reality game"
+             aria-describedby="video-transcript">
         <source src="videos/PirateVideo.mp4" type="video/mp4">
         Your browser does not support the video tag.
       </video>
+      <p id="video-transcript">
+        Transcript: The video shows a pirate ship sailing in a virtual reality harbor, moving through calm waters with seagulls flying overhead.
+      </p>
     </div>
 
   </div>
