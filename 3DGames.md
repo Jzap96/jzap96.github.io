@@ -12,7 +12,14 @@
 
 </div>
 
-## Harbored
+## Patched
+### Map
+
+<div style="display:flex;flex-wrap:wrap;gap:10px;max-width:600px;">
+  <img src="path/to/map1.jpg" width="48%">
+  <img src="path/to/map2.jpg" width="48%">
+</div>
+
 
 <div style="display:flex;flex-wrap:wrap;gap:10px;max-width:600px;">
   <img src="path/to/image1.jpg" width="48%">
