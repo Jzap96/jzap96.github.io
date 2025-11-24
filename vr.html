@@ -4,13 +4,22 @@
   <meta charset="UTF-8">
   <title>Virtual Reality</title>
   <style>
-    /* Page background and text */
     body {
       background-color: #000;
       color: #fff;
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+    }
+
+    /* Content wrapper with side lines */
+    .content-wrapper {
+      max-width: 900px;
+      margin: 0 auto;
+      border-left: 3px solid #fff;
+      border-right: 3px solid #fff;
+      padding: 20px;
+      text-align: center;
     }
 
     /* Nav bar styling */
@@ -35,20 +44,8 @@
       text-decoration: underline;
     }
 
-    /* Content wrapper with side lines and centered text */
-    .content-wrapper {
-      max-width: 900px;
-      margin: 0 auto;
-      border-left: 3px solid #fff;
-      border-right: 3px solid #fff;
-      padding: 20px 0 40px 0;
-      text-align: center;
-      min-height: 100vh; /* ensures white bars extend full height */
-      box-sizing: border-box;
-    }
-
-    /* Image and video grids */
-    .media-grid {
+    /* Image grid */
+    .image-grid {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
@@ -56,14 +53,32 @@
       margin-top: 10px;
     }
 
-    .media-grid img,
-    .media-grid video {
-      width: 48%;
+    .image-grid img {
+      width: auto;
+      max-width: 48%;
       height: auto;
       border: 2px solid #fff;
     }
 
-    /* Headings */
+    .image-grid .centered {
+      display: block;
+      margin: 0 auto;
+      max-width: 48%;
+      height: auto;
+    }
+
+    /* Video styling */
+    .video-wrapper {
+      margin-top: 20px;
+      border: 2px solid #fff;
+    }
+
+    .video-wrapper video {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
     h1, h2 {
       text-align: center;
       margin-bottom: 20px;
@@ -84,21 +99,17 @@
 
     <h1>Virtual Reality</h1>
 
-    <!-- Harbored Game -->
     <h2>Harbored</h2>
-    <div class="media-grid">
+    <div class="image-grid">
       <img src="images/vr_ship1.png" alt="Ship Image">
       <img src="images/vr_ship2.png" alt="Harbor Ship">
-      <img src="images/vr_ship3.png" alt="Image 3">
-      
-      <!-- Accessible video -->
-      <video controls 
-             src="video/PirateVideo.mp4" 
-             aria-label="Pirate ship sailing on the sea" 
-             aria-details="pirate-video-transcript">
-       
-        <a href="video/PirateVideo.mp4">Download the video</a> or 
-        <a id="pirate-video-transcript" href="transcripts/PirateVideo.txt">read the transcript</a>.
+      <img class="centered" src="images/vr_ship3.png" alt="Centered Image">
+    </div>
+
+    <div class="video-wrapper">
+      <video controls>
+        <source src="videos/PirateVideo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
       </video>
     </div>
 
