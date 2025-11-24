@@ -80,16 +80,21 @@
       margin: 0 auto;
     }
 
-    /* Video */
+    /* YouTube Video */
     .video-container {
+      position: relative;
       width: 100%;
       max-width: 1200px;
       margin: 30px auto;
+      padding-top: 56.25%; /* 16:9 aspect ratio */
     }
 
-    .video-container video {
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: auto; /* maintain aspect ratio */
+      height: 100%;
       border: 2px solid #fff;
     }
 
@@ -127,17 +132,13 @@
     </div>
 
     <div class="video-container">
-      <video controls
-             aria-label="Pirate ship sailing video"
-             aria-details="pirate-video-transcript">
-        <source src="videos/PirateVideo.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe src="https://www.youtube.com/embed/sDaqmaKhPzk" 
+              title="Pirate ship sailing video" 
+              frameborder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowfullscreen>
+      </iframe>
     </div>
-
-    <p id="pirate-video-transcript">
-      <a href="videos/PirateVideoTranscript.txt" style="color: #fff;">View transcript of the video</a>
-    </p>
 
   </div>
 
